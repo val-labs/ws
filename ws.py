@@ -14,5 +14,5 @@ static_mount = make_static_mount('.')
 @bottle.get('/')
 @bottle.get('/<path:path>')
 @bottle.get('/<path:path>/')
-def _(path = ''):
+def _(path = '.'):
     return static_mount(path)
